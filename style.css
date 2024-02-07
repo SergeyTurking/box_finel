@@ -1,0 +1,402 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+.header{
+    background-image: url(./img/fon9.png);
+    background-position: center center;  
+    height: 72vh; 
+    width: auto;
+    background-repeat:repeat-x;
+    background-size:cover;
+    
+}
+
+
+
+
+
+
+.header__line{
+    background-color: rgba(0, 0, 0, 0.455);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.img__logo{
+    height: auto;
+    height: 10vh;
+    position: absolute;
+}
+.logo2{
+    height: 10vh;
+    position: relative;
+    animation: logo_anim 5s infinite linear;
+
+}
+@keyframes logo_anim {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+ul,a,li{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    transition: .5s;
+    padding: 0 5px  0 5px;
+    display: flex;
+    margin-top: 1vh;
+   
+
+}
+
+a:hover{
+    color: rgb(149, 149, 149);
+
+}
+.header_tel{
+    color: white;
+    margin-top: 3vh;
+  
+
+}
+
+.header__block{
+    color: white;
+    margin-left: 20vw;
+    margin-top: 8vw;
+    width: 30vw;
+}
+.header__block h1{
+    font-size: 5vw;
+}
+.header__block p{
+    font-size: 2vw;
+}
+.header__block a{
+    font-size: 1.5vw;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.header__block a:hover{
+    background-color: rgb(182, 182, 182);
+}
+
+/*  */
+main {
+    
+    max-width: 1400px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+.about{
+    display: flex;
+    justify-content:space-around;
+    
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+.about__img{
+    width: 30vw;
+}
+ol li{
+    color:black ;
+    background-image: url(./img/box.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+}
+
+.img_gym {
+   max-width: 700px;
+    
+}
+.gym{
+    margin-top: 5%;
+    display: flex;
+    position: relative;
+   
+    
+}
+.gym__right{
+   
+  
+    font-size: 1.5vw;
+    /* position: absolute; */
+    right: 0;
+    padding: 40px;
+
+  
+}
+.gym__left{
+   
+    padding: 40px;
+ 
+}
+span{
+    color: rgb(132, 191, 24);
+    font-style: italic;
+
+}
+
+.gallery{
+    margin-top: 5%;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.gallery h1 {
+    padding: 15px;
+}
+.carousel-inner img {
+    height: 35vw;
+
+  
+  }
+ 
+ 
+iframe{
+    width:30vw;
+    height: 20vw;
+    
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+footer{
+    margin-top: 5%;
+    background-image: url('./img/fon2.jpg');
+    height:500px; 
+    width: auto;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/*  */
+form input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+form{
+padding-top: 130px;
+
+}
+.button_block{
+   
+   display: flex;
+   justify-content: center;
+}
+.button{
+    width: 20vw;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 1.5vw;
+}
+.button:hover{
+    background-color: rgb(182, 182, 182);
+}
+footer::before{
+    content: 'Flying Like a Butterfly';
+    position: absolute;
+    font-size: 5vw;
+    max-width: 400px;
+    color:rgba(255, 255, 255, 0.216) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 25px;
+}
+footer::after{
+    content: 'Shoot Like a Bee';
+    position: absolute;
+    font-size: 5vw;
+    max-width: 400px;
+    color:rgba(255, 255, 255, 0.216) ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+}
+footer{
+    position: relative;
+ 
+}
+
+
+/* Адаптив ноутбуки*/
+@media screen and  (max-width: 1200px){
+    .header__block h1{
+        font-size: 5vw;
+        
+    }
+    .header__block p{
+        font-size: 3vw;
+        
+    }
+    .header__block a{
+        font-size: 2vw;
+   
+    }
+    
+    .header{
+        height: 70vh;
+        background-repeat:no-repeat;
+        background-position: center center;  
+     
+        background-attachment:scroll;
+        background-image: url(./img/99999.png);
+    }
+    /*  */
+
+    .gym{
+        display: block;
+        
+    }
+    .gym__right{
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .img_gym{
+        width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+       
+    }
+    /*  */
+    .about{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       
+
+        
+    }
+    .about__left{
+        padding-left: 10%;   
+    }
+    .about__img{
+        width: 60vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+    
+
+/* Адаптив планшет*/
+@media  (max-width: 767px){
+    .header{
+        background-image: url(./img/69.png);
+       
+        background-position: center center;  
+        height: 400px; 
+        background-attachment: scroll;
+        background-repeat:no-repeat;
+        background-size:cover;
+      
+    }
+    .header__line{
+        font-size: 2vw;
+    }
+    .about__left h1{
+        font-size: 20px;
+    }
+    .gallery h1{
+        font-size: 20px;
+    }
+    form input{
+        width: 40vw;
+
+    }
+    .button{
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+   
+}
+.carousel_mob{
+    display: none;
+}
+
+@media (max-width:503px) {
+    .about__left{
+        font-size: 2.5vw;
+    }
+    ul, .header_tel{
+        font-size: 3vw;
+    }
+    .gym__right{
+        margin-top: -60px;
+    }
+    .gallery h1{
+        font-size: 18px;
+    }
+   .gallery {
+    width: 90vw;
+    
+   }
+   .carousel-inner img {
+    height: 60vw;
+  }
+  iframe{
+    width:90vw;
+    height: 60vw;
+    
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+.container{
+    display: none;
+}
+.carousel_mob{
+    display: block;
+}
+.header_tel{
+    font-size: 12px;
+   
+}
+
+}
